@@ -2,6 +2,7 @@
 using CompulsoryPetshop.Core.ApplicationService.Service;
 using CompulsoryPetshop.Core.DomainService;
 using Infrastructure.Data;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 
@@ -9,21 +10,26 @@ namespace CompulsoryPetshop.UI
 {
     public class Program
     {
-        static int id = 1;
-
-        static Printer printer;
-
+       // static Printer printer;
         static List<Pet> petList;
+        public static int id = 1;
         public static void Main(string[] args)
         {
             var petRepo = new PetRepository();
             petRepo.InitData();
             PetService _petService = new PetService(petRepo);
-            printer = new Printer(_petService);
-
             petList = petRepo.ReadPets();
 
-            int selection = printer.PrintMenuItems();
+            var serviceCollection = new ServiceCollection();
+            serviceCollection.AddScoped<IPetRepository, PetRepository>();
+            serviceCollection.AddScoped<IPetService, PetService>();
+            serviceCollection.AddScoped<IPrinter, Printer>();
+
+            var serviceProvider = serviceCollection.BuildServiceProvider();
+            var printer = serviceProvider.GetRequiredService<IPrinter>();
+            var selection = printer.PrintMenuItems();
+               
+            //int selection = printer.PrintMenuItems();
 
             while (selection != 8)
             {
@@ -31,23 +37,33 @@ namespace CompulsoryPetshop.UI
                 {
                     case 1:
                         Console.Clear();
-                        printer.PrintListOfPets(); //DONE
+                        printer.PrintListOfPets();
                         break;
                     case 2:
                         Console.Clear();
-                        printer.FindPetByType(petList); //DONE
+                        printer.FindPetByType(petList);
                         break;
                     case 3:
                         Console.Clear();
-                        CreatePet(); //DONE
+                        Pet newPet = printer.PrintCreatePet();
+                        newPet.PetId = petList.Count+1;
+                        petList.Add(newPet);
                         break;
                     case 4:
                         Console.Clear();
-                        DeletePet(); //DONE
+                        var petFound = printer.PetFound(petList);
+                        if (petFound != null)
+                        {
+                            petList.Remove(petFound);
+                        }
                         break;
                     case 5:
                         Console.Clear();
-                        UpdatePet(); //DONE?
+                        var pet = printer.PetFound(petList);
+                        if (pet != null)
+                        {
+                            petFound = printer.PrintUpdatePet(pet);
+                        }
                         break;
                     case 6:
                         Console.Clear();
@@ -64,31 +80,6 @@ namespace CompulsoryPetshop.UI
                 selection = printer.PrintMenuItems();
             }
             printer.UserLeaving();
-        }
-
-        private static void UpdatePet()
-        {
-            var petFound = printer.PetFound(petList);
-            if (petFound != null)
-            {
-                petFound = printer.PrintUpdatePet(petFound);
-            }
-        }
-
-        private static void DeletePet()
-        {
-            var petFound = printer.PetFound(petList);
-            if (petFound != null)
-            {
-                petList.Remove(petFound);
-            }
-        }
-
-        private static void CreatePet()
-        {
-            Pet newPet = printer.PrintCreatePet();
-            newPet.PetId = id++;
-            petList.Add(newPet);
         }
     }
 }

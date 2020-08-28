@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CSharp\\CompulsoryPetshop\\Infrastructure.Data\\Infrastructure.Data.csproj": {}
+    "D:\\Documentos\\GitHub\\CompulsoryPetshop\\Infrastructure.Data\\Infrastructure.Data.csproj": {}
   },
   "projects": {
-    "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj": {
+    "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj",
+        "projectUniqueName": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj",
         "projectName": "CompulsoryPetshop.Core.Entities",
-        "projectPath": "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj",
+        "projectPath": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj",
         "packagesPath": "C:\\Users\\Rocío\\.nuget\\packages\\",
-        "outputPath": "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\obj\\",
+        "outputPath": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rocío\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core\\CompulsoryPetshop.Core.csproj": {
+    "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core\\CompulsoryPetshop.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core\\CompulsoryPetshop.Core.csproj",
+        "projectUniqueName": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core\\CompulsoryPetshop.Core.csproj",
         "projectName": "CompulsoryPetshop.Core",
-        "projectPath": "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core\\CompulsoryPetshop.Core.csproj",
+        "projectPath": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core\\CompulsoryPetshop.Core.csproj",
         "packagesPath": "C:\\Users\\Rocío\\.nuget\\packages\\",
-        "outputPath": "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core\\obj\\",
+        "outputPath": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rocío\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,8 +79,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj": {
-                "projectPath": "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj"
+              "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj": {
+                "projectPath": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj"
               }
             }
           }
@@ -112,14 +112,14 @@
         }
       }
     },
-    "C:\\CSharp\\CompulsoryPetshop\\Infrastructure.Data\\Infrastructure.Data.csproj": {
+    "D:\\Documentos\\GitHub\\CompulsoryPetshop\\Infrastructure.Data\\Infrastructure.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CSharp\\CompulsoryPetshop\\Infrastructure.Data\\Infrastructure.Data.csproj",
+        "projectUniqueName": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\Infrastructure.Data\\Infrastructure.Data.csproj",
         "projectName": "Infrastructure.Data",
-        "projectPath": "C:\\CSharp\\CompulsoryPetshop\\Infrastructure.Data\\Infrastructure.Data.csproj",
+        "projectPath": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\Infrastructure.Data\\Infrastructure.Data.csproj",
         "packagesPath": "C:\\Users\\Rocío\\.nuget\\packages\\",
-        "outputPath": "C:\\CSharp\\CompulsoryPetshop\\Infrastructure.Data\\obj\\",
+        "outputPath": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\Infrastructure.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rocío\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -135,8 +135,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core\\CompulsoryPetshop.Core.csproj": {
-                "projectPath": "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core\\CompulsoryPetshop.Core.csproj"
+              "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core\\CompulsoryPetshop.Core.csproj": {
+                "projectPath": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core\\CompulsoryPetshop.Core.csproj"
               }
             }
           }

@@ -1,5 +1,6 @@
 ﻿using CompulsoryPetshop.Core.DomainService;
 using CompulsoryPetshop.UI;
+using System;
 using System.Collections.Generic;
 
 namespace Infrastructure.Data
@@ -18,67 +19,67 @@ namespace Infrastructure.Data
             _petList.Add(new Pet()
             {
                 PetId = 1,
-                PetName = "petname1",
-                PetType = "gato",
+                PetName = "Charlie",
+                PetType = "cat",
                 Price = 1,
-                // PetBirthDate = 23/04/2016,
-                //PetPrevOwner = someone1,
-                PetColor = "petcolor1"
-            }) ;
+                PetBirthDate = new DateTime(2016, 04, 23),
+                PetPrevOwner = "Jimmy Simpson",
+                PetColor = "black"
+            });
 
             _petList.Add(new Pet()
             {
                 PetId = 2,
-                PetName = "petname2",
-                PetType = "perro",
+                PetName = "Max",
+                PetType = "cat",
                 Price = 109,
-                // PetBirthDate = 23/04/2016,
-                //PetPrevOwner = someone2
-                PetColor = "petcolor2"
+                PetBirthDate = new DateTime(2018, 07, 05),
+                PetPrevOwner = "Maxim Marsh",
+                PetColor = "brown"
             });
 
             _petList.Add(new Pet()
             {
                 PetId = 3,
-                PetName = "petname3",
-                PetType = "caballo",
+                PetName = "Buddy",
+                PetType = "dog",
                 Price = 56,
-                // PetBirthDate = 23/04/2016,
-                //PetPrevOwner = someone1,
-                PetColor = "petcolor3"
+                PetBirthDate = new DateTime(2017, 01, 29),
+                PetPrevOwner = "Raylee Hill",
+                PetColor = "grey"
             });
 
             _petList.Add(new Pet()
             {
                 PetId = 4,
-                PetName = "petname4",
-                PetType = "periquito",
+                PetName = "Coco",
+                PetType = "bird",
                 Price = 200,
-                // PetBirthDate = 23/04/2016,
-                //PetPrevOwner = someone1,
-                PetColor = "petcolor1"
+                PetBirthDate = new DateTime(2019, 08, 16),
+                PetPrevOwner = "Cedric Knight",
+                PetColor = "white"
             });
 
             _petList.Add(new Pet()
             {
                 PetId = 5,
-                PetName = "petname5",
-                PetType = "escorpion",
+                PetName = "Lucy",
+                PetType = "dog",
                 Price = 8000,
-                // PetBirthDate = 23/04/2016,
-                //PetPrevOwner = someone2
-                PetColor = "petcolor2"
+                PetBirthDate = new DateTime(2016, 02, 07),
+                PetPrevOwner = "Gabby Mcdonald",
+                PetColor = "black"
             });
 
             _petList.Add(new Pet()
             {
                 PetId = 6,
-                PetName = "petname6",
-                PetType = "caballo",
+                PetName = "Chloe",
+                PetType = "horse",
                 Price = 790,
-                // PetBirthDate = 23/04/2016,
-                //PetPrevOwner = someone1,
-                PetColor = "petcolor3"
+                PetBirthDate = new DateTime(2015, 04, 02),
+                PetPrevOwner = "Billie Doyle",
+                PetColor = "grey"
             });
 
         }

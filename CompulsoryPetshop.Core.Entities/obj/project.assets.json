@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj",
+      "projectUniqueName": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj",
       "projectName": "CompulsoryPetshop.Core.Entities",
-      "projectPath": "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj",
+      "projectPath": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\CompulsoryPetshop.Core.Entities.csproj",
       "packagesPath": "C:\\Users\\Rocío\\.nuget\\packages\\",
-      "outputPath": "C:\\CSharp\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\obj\\",
+      "outputPath": "D:\\Documentos\\GitHub\\CompulsoryPetshop\\CompulsoryPetshop.Core.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rocío\\AppData\\Roaming\\NuGet\\NuGet.Config",
